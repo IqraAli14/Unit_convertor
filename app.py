@@ -4,7 +4,7 @@ from google import genai
 
 
 # Initialize GenAI client with API key
-API_KEY = st.secret["google_key"]
+API_KEY = st.secrets["google_key"]
 client = genai.Client(api_key=API_KEY)
 
 # Custom CSS for a premium dark-glass UI with a floating chatbox
